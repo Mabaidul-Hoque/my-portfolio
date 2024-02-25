@@ -47,6 +47,21 @@ const Navbar = () => {
     },
     opened: {
       x: 0,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const listItemVariants = {
+    closed: {
+      x: -10,
+      opacity: 0,
+    },
+    opened: {
+      x: 0,
+      opacity: 1,
     },
   };
 
@@ -108,18 +123,16 @@ const Navbar = () => {
           variants={listVariants}
           initial='closed'
           animate='opened'
-          transition={"1s ease-in-out"}
           className='absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-9 text-4xl z-40'
         >
           {links.map((link) => (
-            <Link
-              href={link.url}
+            <motion.div
               onClick={() => setOpen(false)}
+              variants={listItemVariants}
               key={link.title}
-              className=''
             >
-              {link.title}
-            </Link>
+              <Link href={link.url}>{link.title}</Link>
+            </motion.div>
           ))}
         </motion.div>
       )}
