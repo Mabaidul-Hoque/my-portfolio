@@ -13,7 +13,7 @@ const AboutPage = () => {
       {/* CONTAINER */}
       <div className=''>
         {/* TEXT CONTAINER */}
-        <div className='p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 x l:gap-64'>
+        <div className='p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 l:gap-64 '>
           {/* BIOGRAPHY CONTAINER */}
           <div className='flex flex-col gap-12 justify-center'>
             {/* BIOGRAPHY TITLE */}
@@ -31,14 +31,24 @@ const AboutPage = () => {
             <span>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </span>
+
+            {/* BIOGRAPHY SIGN SCROLL */}
+            <div className='flex justify-end'>
+              <img
+                width={150}
+                height={24}
+                src='/my_digi_sign.svg'
+                alt='sign_icon'
+              />
+            </div>
           </div>
           {/* SKILLS CONATINER */}
-          <div className=''>SKILLS</div>
+          <div className=''></div>
           {/* EXPERIANCE CONTAINER */}
-          <div className=''>EXPERIANCE</div>
+          {/* <div className=''></div> */}
         </div>
         {/* SVG CONTAINER */}
-        <div className=''></div>
+        {/* <div className='hidden'></div> */}
       </div>
     </motion.div>
   );
