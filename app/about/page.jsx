@@ -13,27 +13,33 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
-      <div className="w-screen">
+      <div className="w-full">
         {/* TEXT CONTAINER */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-16 md:gap-32 lg:gap-48 xl:gap-64">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:px-48 flex flex-col gap-16 ">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-5 justify-center">
             {/* BIOGRAPHY TITLE */}
             <h1 className="text-xl font-bold">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESCRIPTION */}
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Laboriosam, sit eligendi in neque dignissimos nam quos accusantium
-              reiciendis autem fugiat saepe ratione ab alias exercitationem.
-              Possimus, veniam aliquam in eos unde nisi, doloribus alias
-              dignissimos, dicta delectus exercitationem. Itaque dolorem ratione
-              facilis eum ipsa eveniet praesentium corporis vitae ipsum nobis.
+              I am Mabaidul Hoque. Currently, I am pursuing a Full Stack
+              Developer program at Newton School, where I am honing my skills in
+              both frontend and backend development. I have successfully
+              completed the frontend part of the program and am currently
+              engaged in the backend portion. My goal is to become a proficient
+              developer who can contribute significantly to the success of any
+              company I work for. I am passionate about coding and enjoy the
+              challenges and creativity that come with software development.
+              Through my dedication and hard work, I aim to add value to the
+              projects I work on and make meaningful contributions to the teams
+              I am a part of. With a strong foundation in frontend development
+              and an ongoing commitment to learning backend technologies, I am
+              excited about the opportunities that lie ahead in my journey as a
+              developer. I am eager to apply my skills and knowledge to
+              real-world projects, solve complex problems, and continue growing
+              both personally and professionally in the field of software
+              development.
             </p>
-            {/* BIOGRAPHY QUOTE */}
-            <span>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </span>
-
             {/* BIOGRAPHY SIGN  */}
             <div className="flex justify-end">
               <img
@@ -65,26 +71,22 @@ const AboutPage = () => {
             </div>
           </div>
           {/* EXPERIANCE CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center pb-48">
+          <div className="flex flex-col gap-12 justify-center">
             {/* EXPERIANCE TITLE */}
             <div className="text-2xl font-bold">EXPERIANCE</div>
             {/* EXPERIANCE list */}
-            <div className="">
-              <div className="">
+            <div>
+              <div>
                 {/* JOB TITLE */}
-                <div className="">Teacher</div>
+                <div>Teacher</div>
                 {/* JOB SUB-TITLE */}
-                <div className="">
+                <div>
                   Private school teacher and Tutor Part Time Apr 20 - Jan 24
                 </div>
-                {/* JOB DESCRIPTION */}
-                <p className=""></p>
               </div>
             </div>
           </div>
         </div>
-        {/* SVG CONTAINER */}
-        <div className="hidden"></div>
       </div>
     </motion.div>
   );

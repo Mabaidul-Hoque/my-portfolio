@@ -1,14 +1,16 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { links } from "@/static_data/links";
 import { socialLinks } from "@/static_data/links";
 import NavLink from "./NavLink";
 import { motion } from "framer-motion";
+import { DataContext } from "@/contexts/DataProvider";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
+  const { open, setOpen } = useContext(DataContext).menuData;
 
   const handleMenuClick = () => {
     setOpen((prev) => !prev);
@@ -95,7 +97,7 @@ const Navbar = () => {
         ))}
       </div>
       {/*  RESPONSIVE MENU*/}
-      <div className="md:hidden">
+      <div className="md:hidden absolute top-8 right-10">
         <button
           onClick={handleMenuClick}
           className="w-10 h-8 flex flex-col z-50 justify-between relative"
@@ -123,7 +125,7 @@ const Navbar = () => {
           variants={listVariants}
           initial="closed"
           animate="opened"
-          className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-9 text-4xl z-40"
+          className="fixed top-0 left-0 w-full h-screen bg-black text-white flex flex-col items-center justify-center gap-9 text-4xl z-40"
         >
           {links.map((link) => (
             <motion.div
