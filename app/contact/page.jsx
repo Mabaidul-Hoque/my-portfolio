@@ -59,11 +59,11 @@ const ContactPage = () => {
               </h2>
               <input
                 type="email"
-                className="w-full p-2 mb-4 border border-black rounded bg-inherit text-white active:outline-black focus:outline-black "
+                className="w-full p-2  border border-gray-500 rounded bg-inherit text-white outline-none mt-4"
                 placeholder="Email"
               />
               <textarea
-                className="w-full p-2 mb-4 border border-black rounded bg-inherit text-white"
+                className="w-full p-2 mb-4 border border-gray-500 rounded bg-inherit text-white outline-none mt-4"
                 placeholder="Regards"
                 rows="4"
               ></textarea>
