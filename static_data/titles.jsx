@@ -9,4 +9,6 @@ export const skillTitles = [
   "Framer motion",
   "Java",
   "NodeJS",
+  "Python",
+  "SQL",
 ];
