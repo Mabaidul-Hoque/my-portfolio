@@ -11,21 +11,16 @@ const ContactPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="flex justify-center items-center h-[calc(100vh-6rem)] bg-gradient-to-r from-green-400 to-blue-500">
-        <div className="flex gap-4 w-full max-w-5xl p-4 mx-auto">
-          <div className="w-1/2 ">
+      <div className="w-full flex justify-center items-center min-h-[calc(100vh-6rem)] bg-gradient-to-r from-gray-200 to-blue-200">
+        <div className="flex flex-col md:flex-row gap-4 w-full max-w-5xl p-4 mx-auto">
+          <div className="w-full md:w-1/2 ">
             {/* Animation section */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              className="bg-inherit p-20 rounded-lg shadow-lg h-full"
+              className="bg-inherit px-10 py-20 md:p-20 rounded-lg shadow-lg h-full"
             >
-              {/* Insert your interesting animation here */}
-
-              {/* <h1 className="text-white text-center text-4xl font-mono w-80">
-                Say Hello
-              </h1> */}
               {/* Hand wave animation with big hand logo */}
               <motion.div
                 animate={{
@@ -36,34 +31,34 @@ const ContactPage = () => {
                     repeatType: "reverse",
                   },
                 }}
-                className="hand-wave"
+                className="hand-wave flex flex-col items-start justify-center"
               >
                 <Image
                   src="/hand-wave.jpg"
                   alt="Big Hand Logo"
-                  className="hand-logo"
+                  className="hand-logo bg-transparent"
                   width={50}
                   height={50}
                 />
-                <h1 className="text-white text-center text-4xl font-mono w-80">
+                <h1 className="text-gray-500 text-center text-4xl font-mono w-fit">
                   Say Hello
                 </h1>
               </motion.div>
             </motion.div>
           </div>
-          <div className="w-1/2 ">
+          <div className="w-full md:w-1/2 ">
             {/* Contact form section */}
             <form className="bg-inherit p-4 rounded-lg shadow-lg h-full">
-              <h2 className="text-2xl text-white text-center font-bold mb-4">
+              <h2 className="text-2xl text-gray-500 text-center font-bold mb-4">
                 Mabaidul Hoque
               </h2>
               <input
                 type="email"
-                className="w-full p-2  border border-gray-500 rounded bg-inherit text-white outline-none mt-4"
+                className="w-full p-2  border border-gray-500 rounded bg-inherit text-gray-500 outline-none mt-4"
                 placeholder="Email"
               />
               <textarea
-                className="w-full p-2 mb-4 border border-gray-500 rounded bg-inherit text-white outline-none mt-4"
+                className="w-full p-2 mb-4 border border-gray-500 rounded bg-inherit text-gray-500 outline-none mt-4"
                 placeholder="Regards"
                 rows="4"
               ></textarea>

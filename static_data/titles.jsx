@@ -2,6 +2,7 @@ export const skillTitles = [
   "HTML",
   "CSS",
   "JavaScript",
+  "TypeScript",
   "ReactJS",
   "NextJS",
   "Tailwind CSS",

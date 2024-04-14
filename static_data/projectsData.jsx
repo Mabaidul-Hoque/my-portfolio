@@ -39,4 +39,14 @@ export const projectsData = [
     img: "/Inshorts.png",
     link: "https://newsfeed-javascript-project-6r73gd6x4k5b.vercel.app/",
   },
+  {
+    id: 4,
+    color: "from-sky-300 to-gray-300",
+    title: "LinedIn clone",
+    tech: "React Tailwind TypeScript",
+    description:
+      "The LinkedIn clone project is a dynamic platform built with React, Tailwind CSS, and TypeScript, replicating LinkedIn's professional networking features. It focuses on creating a user-friendly interface for connecting with professionals, sharing experiences, and discovering opportunities. Utilizing modern web technologies, the project aims to provide a seamless user experience, similar to LinkedIn, with responsive design ensuring compatibility across devices.",
+    img: "/latest-linkedin-logo-1.webp",
+    link: "https://linked-in-clone-eight.vercel.app/",
+  },
 ];
