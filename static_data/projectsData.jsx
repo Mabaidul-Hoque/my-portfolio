@@ -40,13 +40,23 @@ export const projectsData = [
     link: "https://newsfeed-javascript-project-6r73gd6x4k5b.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     color: "from-sky-300 to-gray-300",
     title: "LinedIn clone",
-    tech: "React Tailwind TypeScript",
+    tech: "React, Tailwind, TypeScript",
     description:
       "The LinkedIn clone project is a dynamic platform built with React, Tailwind CSS, and TypeScript, replicating LinkedIn's professional networking features. It focuses on creating a user-friendly interface for connecting with professionals, sharing experiences, and discovering opportunities. Utilizing modern web technologies, the project aims to provide a seamless user experience, similar to LinkedIn, with responsive design ensuring compatibility across devices.",
     img: "/latest-linkedin-logo-1.webp",
     link: "https://linked-in-clone-eight.vercel.app/",
+  },
+  {
+    id: 6,
+    color: "from-gray-300 to-green-300",
+    title: "Disney+Hotstar clone",
+    tech: "React, Tailwind, TypeScript",
+    description:
+      "The Disney+Hotstar clone project is a dynamic platform meticulously crafted with React, Tailwind CSS, and TypeScript, replicating the user-friendly interface and seamless experience of Disney+ and Hotstar. This project focuses on providing a comprehensive streaming service, featuring a vast library of movies, series, and documentaries, all categorized for easy navigation. Utilizing modern web technologies, the project ensures compatibility across devices, offering a responsive design that adapts to various screen sizes. With features like personalized recommendations, user profiles, and the ability to create playlists, the Disney+Hotstar clone project aims to deliver an engaging and personalized viewing experience, similar to the original platforms.",
+    img: "/disney_plus_hotstar_india.jpg",
+    link: "https://disney-plus-hotstar-clone-gilt.vercel.app/",
   },
 ];
