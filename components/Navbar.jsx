@@ -90,9 +90,15 @@ const Navbar = () => {
       </div>
       {/* SOCIAL LINKS */}
       <div className="hidden md:flex gap-4 w-1/3 justify-end">
-        {socialLinks.map((link) => (
+        {socialLinks.map((link, index) => (
           <Link key={link.title} href={link.url} target="_blank">
-            <Image width={24} height={24} src={link.image} alt={link.title} />
+            <Image
+              className={`${index === 0 && "pt-1"}`}
+              width={24}
+              height={24}
+              src={link.image}
+              alt={link.title}
+            />
           </Link>
         ))}
       </div>

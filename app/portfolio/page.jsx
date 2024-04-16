@@ -55,11 +55,26 @@ const PortFolioPage = () => {
                         <span className="font-semibold">Project Tech:</span>{" "}
                         {project.tech}
                       </p>
-                      <Link href={project.link} className="mt-10">
-                        <button className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-gradient-to-r from-purple-500 to-green-500">
-                          See Demo
-                        </button>
-                      </Link>
+                      <div className="flex items-center gap-4">
+                        <Link
+                          href={project.link}
+                          target="_blank"
+                          className="mt-10"
+                        >
+                          <button className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-gradient-to-r from-purple-500 to-green-500">
+                            See Demo
+                          </button>
+                        </Link>
+                        <Link
+                          href={project.git_link}
+                          target="_blank"
+                          className="mt-10"
+                        >
+                          <button className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-gradient-to-r from-purple-500 to-green-500">
+                            Git Hub
+                          </button>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>

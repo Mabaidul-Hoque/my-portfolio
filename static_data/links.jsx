@@ -7,6 +7,11 @@ export const links = [
 
 export const socialLinks = [
   {
+    url: "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new",
+    title: "Email",
+    image: "/gamil.webp",
+  },
+  {
     url: "https://github.com/Mabaidul-Hoque",
     title: "Github",
     image: "/github_logo.png",
